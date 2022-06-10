@@ -1,1 +1,1 @@
-# JS-exercises--Eddie-Jeremy-technicalLead-
+# JS - Exercise 
