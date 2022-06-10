@@ -141,7 +141,7 @@ function exercise4(varA, varB) {
     // --------------------------------------------
     // Write your code for the exercise below here:
     // --------------------------------------------
-    if (varA != varB) {
+    if (varA !== varB) {
         return answer4 = "varA and varB are differ"
     } else {
         return "varA and varB are equal"
@@ -156,11 +156,15 @@ console.log(exercise4("h", "h"));
 console.log(exercise4(6, 5));
 console.log(exercise4("hello", "bill"));
 console.log(exercise4("hello", "hello"));
+console.log(exercise4("4", 4));
 
 // EXERCISE 5.
 // In exercise 4, what are some of the unexpected cases where `varA` and `varB`
 // seemed like they are equal, but would not pass the tests? In your analysis
 // consider other data types beside strings and variables.
+// I tested "!=" & "!==" , to test "4" and 4, which depending on how strict 
+// I want to compare the two values.
+
 
 // EXERCISE 6.
 // Here, assign the value of true to answer6 if:
@@ -171,7 +175,9 @@ function exercise6(varA, varB, varC) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+    if (varA == varB != varC) {
+    return
+}
   // --------------------------------------------
   // And above here
   // --------------------------------------------
