@@ -137,16 +137,25 @@ console.log(exercise3(-10));
 // otherwise assign a value of "varA and varB differ"
 
 function exercise4(varA, varB) {
-  let answer4;
-  // --------------------------------------------
-  // Write your code for the exercise below here:
-  // --------------------------------------------
-
-  // --------------------------------------------
-  // And above here
-  // --------------------------------------------
-  return answer4;
+    let answer4;
+    // --------------------------------------------
+    // Write your code for the exercise below here:
+    // --------------------------------------------
+    if (varA != varB) {
+        return answer4 = "varA and varB are differ"
+    } else {
+        return "varA and varB are equal"
+        // --------------------------------------------
+        // And above here
+        // --------------------------------------------
+        return answer4;
+    }
 }
+console.log(exercise4(5, 5));
+console.log(exercise4("h", "h"));
+console.log(exercise4(6, 5));
+console.log(exercise4("hello", "bill"));
+console.log(exercise4("hello", "hello"));
 
 // EXERCISE 5.
 // In exercise 4, what are some of the unexpected cases where `varA` and `varB`
