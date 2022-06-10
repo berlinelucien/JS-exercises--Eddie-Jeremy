@@ -126,9 +126,10 @@ function exercise3(num3) {
   // --------------------------------------------
   return answer3;
 }
-console.log(exercise3(4));
-console.log(exercise3(0));
-console.log(exercise3(-10));
+//console.log(exercise3(4));
+//console.log(exercise3(0));
+//console.log(exercise3(-10));
+
 
 // EXERCISE 4.
 // Write an if/else statement such that if `varA` and `varB` are strings or
@@ -141,16 +142,16 @@ function exercise4(varA, varB) {
     // --------------------------------------------
     // Write your code for the exercise below here:
     // --------------------------------------------
+    answer4 = "varA and varB are equal"
     if (varA !== varB) {
         return answer4 = "varA and varB are differ"
-    } else {
-        return "varA and varB are equal"
+    }
         // --------------------------------------------
         // And above here
         // --------------------------------------------
         return answer4;
     }
-}
+
 console.log(exercise4(5, 5));
 console.log(exercise4("h", "h"));
 console.log(exercise4(6, 5));
@@ -175,14 +176,20 @@ function exercise6(varA, varB, varC) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-    if (varA == varB != varC) {
-    return
-}
+    if (varA == varB , varA || varB != varC) {
+        return answer6 = 'false'
+    }
+
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer6;
 }
+console.log(exercise6(1, 1, 0))
+console.log(exercise6(1,"1",1))
+console.log(exercise6(5, 5, 1));
+
+
 
 // EXERCISE 7.
 // Use a switch conditional statement with case clauses such that if `num7` is
@@ -194,7 +201,7 @@ function exercise6(varA, varB, varC) {
 // "Welcome to coding 101!"
 // if num7 is 1000000, then answer7 should be:
 // "You are one in a million!"
-// Othewise, assign answer7 a value of:
+// Otherwise, assign answer7 a value of:
 // "Thanks for that!"
 
 function exercise7(num7) {
@@ -202,12 +209,31 @@ function exercise7(num7) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+    switch (num7) {
+        case 7:
+            return answer7 = "You are lucky!"
+           
+        case 101:
+            return answer7 = "Welcome to coding 101!"
+           
+        case 1000000:
+            return answer7 = "You are one in a million!"
+            
+        default:
+            return answer7 = "Thanks for that"
+          
+}
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer7;
 }
+console.log(exercise7(7));
+console.log(exercise7(101));
+console.log(exercise7(1000000));
+console.log(exercise7(3));
+
+
 
 // EXERCISE 8.
 // Using any conditional assign the value of true to answer8 if:
