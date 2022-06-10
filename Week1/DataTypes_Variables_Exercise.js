@@ -15,7 +15,7 @@
 let emptyVariable;
 
 // Exercise 2. Declare a variable called 'myName'
-let myName;
+let myName1;
 // Exercise 3. Assign your name as the value for 'myName'
 let myName = 'Berline';
 console.log(myName);
@@ -29,8 +29,8 @@ console.log(dreamDestination);
 // - a variable called num1 with a value greater than 1 and less than 10
 // - a variable called num2 with a value of greater than or equal to 1 and less
 // than or equal to 10
-let num1 = [2, 3, 4, 5, 6, 7, 8, 9];
-let num2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let num_1 = [2, 3, 4, 5, 6, 7, 8, 9];
+let num_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Exercise 6. Write a comment below explaining the difference between the rules
 // for num1 and num2 from Exercise 5. What numbers would be valid values for 
