@@ -57,7 +57,7 @@ function exercise1(num1) {
   // ------------------------------------------
     answer1 = "num1 is small"
     if (num1 > 10) {
-    return answer1 = `The value of num1 is ${num1} and is greater than 10.`
+    answer1 = `The value of num1 is ${num1} and is greater than 10.`
 }
   // ------------------------------------------
   // And above here
@@ -84,10 +84,10 @@ function exercise2(num2) {
   // Write your code for the exercise below here:
   // --------------------------------------------
     if (num2 % 2 == 0) {
-    return `${num2}`
+    answer2 = `${num2}`
     }
     if (num2 % 2 == 1) {
-        return `${num2}`;
+    answer2 = `${num2}`;
     }
    
   // --------------------------------------------
@@ -95,9 +95,10 @@ function exercise2(num2) {
   // --------------------------------------------
   return answer2;
 }
-//console.log(exercise2(2));
-//console.log(exercise2(3));
-//console.log(exercise2(4));
+console.log("======== exercise 2");
+console.log(exercise2(2));
+console.log(exercise2(3));
+console.log(exercise2(4));
 
 
 // EXERCISE 3.
@@ -115,21 +116,22 @@ function exercise3(num3) {
   // Write your code for the exercise below here:
   // --------------------------------------------
     if (num3 > 0) {
-    return answer3 = `${num3} is positive`
+    answer3 = `${num3} is positive`
     } if (num3 < 0) {
-    return answer3 = `${num3} is negative`
+    answer3 = `${num3} is negative`
     }
     if (num3 == 0) {
-        return `${num3} is zero`
+        answer3 = `${num3} is zero`
     }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer3;
 }
-//console.log(exercise3(4));
-//console.log(exercise3(0));
-//console.log(exercise3(-10));
+console.log("======== exercise 3");
+console.log(exercise3(4));
+console.log(exercise3(0));
+console.log(exercise3(-10));
 
 
 // EXERCISE 4.
@@ -152,7 +154,7 @@ function exercise4(varA, varB) {
         // --------------------------------------------
         return answer4;
     }
-
+console.log("======== exercise 4");
 console.log(exercise4(5, 5));
 console.log(exercise4("h", "h"));
 console.log(exercise4(6, 5));
@@ -192,6 +194,7 @@ function exercise6(varA, varB, varC) {
   // --------------------------------------------
   return answer6;
 }
+console.log("======== exercise 6");
 console.log(exercise6(1, 1, 0));
 console.log(exercise6(1, "1", 4)); 
 console.log(exercise6(5, 5, 5));
@@ -240,6 +243,7 @@ function exercise7(num7) {
   // --------------------------------------------
   return answer7;
 }
+console.log("======== exercise 7");
 console.log(exercise7(7));
 console.log(exercise7(101));
 console.log(exercise7(1000000));
