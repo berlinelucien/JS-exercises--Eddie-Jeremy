@@ -51,10 +51,11 @@
 // "The value of num1 is <num1 value> and is greater than 10".
 
 function exercise1(num1) {
-  let answer1 = "num1 is small";
+  let answer1;
   // ------------------------------------------
   // Write your code for exercise 1 below here:
   // ------------------------------------------
+    answer1 = "num1 is small"
     if (num1 > 10) {
     return answer1 = `The value of num1 is ${num1} and is greater than 10.`
 }
@@ -176,18 +177,25 @@ function exercise6(varA, varB, varC) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-    if (varA == varB , varA || varB != varC) {
-        return answer6 = 'false'
+    
+    // answer = "false"
+    // A & B == EQUAL
+    // A or B != varC (return answer)
+   
+    if ((varA == varB) && (varA !== varC)){
+        answer6 = "true" ;
+    } else {
+        answer6 = "false";
     }
-
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer6;
 }
-console.log(exercise6(1, 1, 0))
-console.log(exercise6(1,"1",1))
-console.log(exercise6(5, 5, 1));
+console.log(exercise6(1, 1, 0));
+console.log(exercise6(1, "1", 4)); 
+console.log(exercise6(5, 5, 5));
+console.log(`true:${exercise6(1, 1, 0)}`);
 
 
 
@@ -209,20 +217,24 @@ function exercise7(num7) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
+    
     switch (num7) {
+        case 1:
+            answer7 = "You won!"
+            break;
         case 7:
-            return answer7 = "You are lucky!"
-           
+            answer7 = "You are lucky!"
+            break;
         case 101:
-            return answer7 = "Welcome to coding 101!"
-           
+            answer7 = "Welcome to coding 101!"
+           break;
         case 1000000:
-            return answer7 = "You are one in a million!"
-            
+            answer7 = "You are one in a million!"
+            break;
         default:
-            return answer7 = "Thanks for that"
+            answer7 = "Thanks for that"
           
-}
+    }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -232,7 +244,7 @@ console.log(exercise7(7));
 console.log(exercise7(101));
 console.log(exercise7(1000000));
 console.log(exercise7(3));
-
+console.log(exercise7(-3));
 
 
 // EXERCISE 8.
@@ -245,12 +257,28 @@ function exercise8(amount1, amount2, minimum, maximum) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
+    
+   // mini < amt1
+   // amt2 < max
+    if ((minimum < amount1) && (minimum < amount2)) {
+        if ((amount2 < maximum) && (amount2 < maximum)) {
+            answer8 = true
+        }
+    } else { answer8 = false }
 
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer8;
 }
+console.log("===== exercise 8")
+console.log(exercise8(-5, 10, 2, 8));
+console.log(exercise8(2, 5, 1, 10));
+console.log(exercise8(2, 2, 2, 2,));
+console.log(exercise8(-12, 2, 2, 0));
+
+
+
 
 // EXERCISE 9.
 // In this exercise, if `item` is a number, follow the rules given in Exercise 7
@@ -264,12 +292,32 @@ function exercise9(item) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+    switch (item) {
+        case 1:
+            answer9 = "You won!"
+            break;
+        case 7:
+            answer9 = "You are lucky!"
+            break;
+        case 101:
+            answer9 = "Welcome to coding 101!"
+            break;
+        case 1000000:
+            answer9 = "You are one in a million!"
+            break;
+        default:
+            answer9 = `Please send a number, that was a ${typeof item}.`
+    }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer9;
 }
+console.log("======");
+console.log(exercise9("string"));
+console.log(exercise9("10"));
+console.log(exercise9(1));
+console.log(exercise9(true));
 
 // EXERCISE 10.
 // This question is a modified version of a classic programming question
@@ -286,12 +334,28 @@ function exercise10(num10) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+    if (num10 % 15 == 0) {
+    answer10 = "Fizz Buzz"
+    }
+    else if (num10 % 3 == 0) {
+        answer10 = "Fizz"
+    }
+    else if (num10 % 5 == 0) {
+        answer10 = "Buzz"
+    } else {
+        return num10
+    }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer10;
 }
+console.log("========");
+console.log(exercise10(2));
+console.log(exercise10(15));
+console.log(exercise10(5));
+console.log(exercise10(3));
+
 
 // Congrats, you made it to the end! You rock!
 // Did you find this easy or hard? If you used references, which ones helped you?
