@@ -1,6 +1,8 @@
 // In these exercises, you will be working on conditional statements,
 // namely the if / else if / else and switch/case conditionals.
 
+const { number } = require("prop-types");
+
 // For these exercises, you will place your code in a function block.
 // If you don't know what a function is yet, that's ok, your code will be the
 // same. The variables will be defined for you, you just have to plug in the
@@ -280,7 +282,7 @@ function exercise8(amount1, amount2, minimum, maximum) {
 console.log("===== exercise 8")
 console.log(exercise8(-5, 10, 2, 8));
 console.log(exercise8(2, 5, 1, 10));
-console.log(exercise8(2, 2, 2, 2,));
+console.log(exercise8(4, 6, 3, 9,));
 console.log(exercise8(-12, 2, 2, 0));
 
 
@@ -298,31 +300,36 @@ function exercise9(item) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
+  
     switch (item) {
-        case 1:
-            answer9 = "You won!"
-            break;
-        case 7:
-            answer9 = "You are lucky!"
-            break;
-        case 101:
-            answer9 = "Welcome to coding 101!"
-            break;
-        case 1000000:
-            answer9 = "You are one in a million!"
-            break;
-        default:
-            answer9 = `Please send a number, that was a ${typeof item}.`
+      case 1:
+        answer9 = "You won!";
+        break;
+      case 7:
+        answer9 = "You are lucky!";
+        break;
+      case 101:
+        answer9 = "Welcome to coding 101!";
+        break;
+      case 1000000:
+        answer9 = "You are one in a million!";
+        break;
+        
+      default:
+        answer9 = `Please send a number, that was a ${typeof item}.`;
     }
+    
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer9;
 }
-console.log("======");
-console.log(exercise9("string"));
+console.log("======exercise 9");
+console.log(exercise9("bee"));
 console.log(exercise9("10"));
 console.log(exercise9(1));
+console.log(exercise9(7));
+console.log(exercise9(101));
 console.log(exercise9(true));
 
 // EXERCISE 10.
@@ -356,7 +363,7 @@ function exercise10(num10) {
   // --------------------------------------------
   return answer10;
 }
-console.log("========");
+console.log("======== exercise 10");
 console.log(exercise10(2));
 console.log(exercise10(15));
 console.log(exercise10(5));
