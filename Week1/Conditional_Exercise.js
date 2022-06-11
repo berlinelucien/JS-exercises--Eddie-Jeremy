@@ -84,10 +84,10 @@ function exercise2(num2) {
   // Write your code for the exercise below here:
   // --------------------------------------------
     if (num2 % 2 == 0) {
-    answer2 = `${num2}`
+    answer2 = `${num2} is even `
     }
     if (num2 % 2 == 1) {
-    answer2 = `${num2}`;
+    answer2 = `${num2} is odd `;
     }
    
   // --------------------------------------------
