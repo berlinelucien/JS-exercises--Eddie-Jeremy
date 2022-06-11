@@ -264,10 +264,10 @@ function exercise8(amount1, amount2, minimum, maximum) {
   // Write your code for the exercise below here:
   // --------------------------------------------
     
-   // mini < amt1
-   // amt2 < max
+   // mini < amt1 < max
+   // mini < amt2 < max
     if ((minimum < amount1) && (minimum < amount2)) {
-        if ((amount2 < maximum) && (amount2 < maximum)) {
+        if ((amount1 < maximum) && (amount2 < maximum)) {
             answer8 = true
         }
     } else { answer8 = false }
