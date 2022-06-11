@@ -64,9 +64,10 @@ function exercise1(num1) {
   // ------------------------------------------
   return answer1;
 }
-//console.log(exercise1(20));
-//console.log(exercise1(5));
-//console.log(exercise1(-2));
+console.log("======= exercise 1");
+console.log(exercise1(20));
+console.log(exercise1(5));
+console.log(exercise1(-2));
 
 // EXERCISE 2.
 // Write an if/else conditional statement that if given a number will assign
@@ -97,7 +98,7 @@ function exercise2(num2) {
 }
 console.log("======== exercise 2");
 console.log(exercise2(2));
-console.log(exercise2(3));
+console.log(exercise2(13));
 console.log(exercise2(4));
 
 
@@ -145,10 +146,11 @@ function exercise4(varA, varB) {
     // --------------------------------------------
     // Write your code for the exercise below here:
     // --------------------------------------------
-    answer4 = "varA and varB are equal"
-    if (varA !== varB) {
-        return answer4 = "varA and varB are differ"
-    }
+    if (varA == varB) {
+        answer4 = "varA and varB are equal";
+    } else {
+        answer4 = "varA and varB differ";
+   }
         // --------------------------------------------
         // And above here
         // --------------------------------------------
