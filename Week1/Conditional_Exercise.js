@@ -266,8 +266,8 @@ function exercise8(amount1, amount2, minimum, maximum) {
   // Write your code for the exercise below here:
   // --------------------------------------------
     
-   // mini < amt1 < max
-   // mini < amt2 < max
+   // min < amt1 < max
+   // min < amt2 < max
     if ((minimum < amount1) && (minimum < amount2)) {
         if ((amount1 < maximum) && (amount2 < maximum)) {
             answer8 = true
@@ -296,28 +296,31 @@ console.log(exercise8(-12, 2, 2, 0));
 // for example, if item===true, the value should be:
 // "Please send a number, that was a boolean."
 function exercise9(item) {
-  let answer9;
-  // --------------------------------------------
-  // Write your code for the exercise below here:
-  // --------------------------------------------
-  
+    let answer9;
+    // --------------------------------------------
+    // Write your code for the exercise below here:
+    // --------------------------------------------
+  if(typeof item === "number"){
     switch (item) {
-      case 1:
-        answer9 = "You won!";
-        break;
-      case 7:
-        answer9 = "You are lucky!";
-        break;
-      case 101:
-        answer9 = "Welcome to coding 101!";
-        break;
-      case 1000000:
-        answer9 = "You are one in a million!";
-        break;
+        case 1:
+            answer9 = "You won!";
+            break;
+        case 7:
+            answer9 = "You are lucky!";
+            break;
+        case 101:
+            answer9 = "Welcome to coding 101!";
+            break;
+        case 1000000:
+            answer9 = "You are one in a million!";
+            break;
         
-      default:
-        answer9 = `Please send a number, that was a ${typeof item}.`;
-    }
+        default:
+            answer9 = "Thanks for that"
+      }
+  } else {
+    answer9 = `Please send a number, that was a ${typeof item}.`;
+}
     
   // --------------------------------------------
   // And above here
@@ -327,6 +330,7 @@ function exercise9(item) {
 console.log("======exercise 9");
 console.log(exercise9("bee"));
 console.log(exercise9("10"));
+console.log(exercise9(5));
 console.log(exercise9(1));
 console.log(exercise9(7));
 console.log(exercise9(101));
