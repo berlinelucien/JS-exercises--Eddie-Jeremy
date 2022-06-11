@@ -360,6 +360,7 @@ console.log(exercise10(3));
 // Congrats, you made it to the end! You rock!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-//
+// hard because some of the wording threw me off
+// used stackoverflow and pair programming with friend
 
 // Email your file to us or commit your file to GitHub and email us a link.
