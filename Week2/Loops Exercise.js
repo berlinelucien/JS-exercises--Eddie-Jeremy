@@ -1,7 +1,8 @@
 // Week 2 - Loops
 
-// In the following exercises, you will need to place your code or answer underneath each
-// exercise prompt.
+const { count } = require("console");
+
+// In the following exercises, you will need to place your code or answer underneath each exercise prompt.
 
 // First try answering these without using references or looking up any information.
 // Then, check your answer by using references and/or running your code.
@@ -11,13 +12,26 @@
 
 // Exercise 1. Write a 'while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
+let i = 1
+while (i <= 5) {
+    console.log(i)
+    i += 1;
+}
+    
 
 // Exercise 2. Write a 'do while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
+let count = 1;
+do {
+    console.log(i);
+    count++;
+} while (count <= 5)
 
 // Exercise 3. Write a 'for' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
-
+for (i = 0; i <= 5; i++){
+    console.log(i);
+}
 // Exercise 4. Now we want a loop that prints the integers
 // counting DOWN from 10 to 1 (inclusive). Write three loops that do this, to practice
 // writing loops in all 3 ways -- as a 'while', 'do while', and 'for' loop.
