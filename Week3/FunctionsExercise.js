@@ -79,6 +79,16 @@ console.log("*************");
 // Exercise 6. Write a function that takes 2 parameters -- one number and one string.
 // The function should print the string the given number of times.
 // Then write some function calls you would use to test your function.
+function repeatStringNumTimes(string, times) {
+  var repeatedString = "";
+  while (times > 0) {
+    repeatedString += string;
+    times--;
+  }
+  return repeatedString;
+}
+console.log(repeatStringNumTimes("hello ", 3));
+console.log("*************");
 
 // Exercise 7. Read the following code (don't run it yet)
 function mysteryFunction1(p1) {
@@ -88,30 +98,37 @@ const y = 4;
 const z = mysteryFunction1(y);
 console.log("The value of y is " + y);
 console.log("The value of z is " + z);
-
+console.log("*************");
 // Without running the code, write down in a comment:
-// 1. What mysteryFunction1 does
-// 2. What prints out for the value of y
-// 3. What prints out for the value of z
+/** 1. What mysteryFunction1 does?
+  multiplying the const y with the number 2
+  const z assign to mysteryFunction1(y) updated value.
+ */
+// 2. What prints out for the value of y == 4
+// 3. What prints out for the value of z == 8
 // Now run the code and see if you're correct.
 // Were you correct? If not, what did you learn?
+// I had to break this down on paper, I was right and confused a bit
+
 
 // Exercise 8. Read the following code (don't run it yet)
 function mysteryFunction2(p1, p2) {
   const x = p1 - p2;
   return x;
 }
-const a = mysteryFunction2(10, 4);
-const b = mysteryFunction2(a, 1);
-console.log("The value of a is " + a);
-console.log("The value of b is " + b);
-
+const a = mysteryFunction2(10, 4); //6
+const b = mysteryFunction2(a, 1); //(6,1) = 5
+console.log("The value of a is " + a); //6
+console.log("The value of b is " + b);//5
+console.log("*************");
 // Without running the code, write down in a comment:
-// 1. What mysteryFunction2 does
-// 2. What prints out for the value of a
-// 3. What prints out for the value of b
+// 1. What mysteryFunction2 does == subtracts numbers
+// 2. What prints out for the value of a = 6
+// 3. What prints out for the value of b = 5
 // Now run the code and see if you're correct.
 // Were you correct? If not, what did you learn?
+// yes i was correct, i broke down the code on paper to understand better
+
 
 // Exercise 9. This exercise is to practice reading the documentation for functions.
 // String.split() is a function in the JavaScript standard library that you can use in your code.
