@@ -91,3 +91,13 @@ for (let key in user1){
  * Also, we could use another variable name here instead of key. 
  * For instance, "for (let prop in obj)" is also widely used.
  */
+
+let codes = {
+    "49" : "Germany",
+    "41" : "Switzerland",
+    "44" : "Great Britain",
+    "1"  : "USA"
+};
+for (let code in codes){
+    console.log(code); // 1,41,44,49
+}
