@@ -75,3 +75,19 @@ for (let key in menuItem){
 }
 }
 console.log(multiplyNumeric(menu));
+
+
+let user1 = {
+    name : "Bob",
+    age: 30
+}; 
+for (let key in user1){
+    console.log(key); // name , age
+    console.log(user1[key]); // Bob, 30
+}
+/**
+ * Note that all “for” constructs allow us to declare the looping 
+ * variable inside the loop, like let key here.
+ * Also, we could use another variable name here instead of key. 
+ * For instance, "for (let prop in obj)" is also widely used.
+ */
