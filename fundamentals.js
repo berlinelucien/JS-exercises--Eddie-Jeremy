@@ -40,8 +40,8 @@ let count = 0;
 
 for (let i = 0 ; i < word.length;i++){
    // console.log(characters)
-    if (word.length > count){
-        count = word  
+    if (word.charAt(i) != ''){
+        count++
     }
 }
 return count
